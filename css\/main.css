@@ -1,0 +1,51 @@
+/* main.css */
+@import url('navbar.css');
+@import url('layout.css');
+@import url('gallery.css');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Back-to-top button */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #00bcd4;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    cursor: pointer;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#back-to-top:hover {
+    background-color: #008c9e;
+}
+
+/* Show button when scrolling */
+@media (max-width: 768px) {
+    footer {
+        font-size: 14px;
+    }
+}
